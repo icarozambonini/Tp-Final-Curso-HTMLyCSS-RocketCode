@@ -6,33 +6,33 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div class="main-container">
-    <section class="navbar-container__desktop">
+  <div class="main-container"> <!-- Acá se define el contenedor principal, correspondiente al total de la página  -->
+    <section class="navbar-container__desktop"><!-- Este es el contenedor para el Navbar en la versión Desktop -->
     </section>
-    <div class="full-container">
-      <section class="navbar-container__mobile">
-        <nav class="navbar-container__mobile__list">
-          <label for="navbar" class="navbar-container__mobile__list__label">
-            <input type="checkbox" id="navbar" class="navbar-input" />
-            <div class="navbar-open">
-              <i class="fas fa-bars"></i>
+    <div class="full-container"><!--  Acá se define el contenedor con toda la sección navegable. Todo menos el navbar, por así decirlo-->
+      <section class="navbar-container__mobile"><!-- Este es la sección para la definición del navbar para Mobile -->
+        <nav class="navbar-container__mobile__list"><!-- Esta es la etiqueta semántica que define la sección navegable en sí -->
+          <label for="navbar" class="navbar-container__mobile__list__label"> <!-- Esta es la etiqueta con el checkbox para hacer andar el menú desplegable -->
+            <input type="checkbox" id="navbar" class="navbar-input" /><!-- Este es el input checkbox en sí, al que hay que asociar el menú desplegable -->
+            <div class="navbar-open"> <!-- Este es el div del navbar abierto -->
+              <i class="fas fa-bars"></i> <!-- Declaración de Font Awesome -->
             </div>
-            <div class="navbar-close">
-              <i class="fas fa-times"></i>
+            <div class="navbar-close"> <!-- Este es el div del navbar cerrado -->
+              <i class="fas fa-times"></i> <!-- Declaración de Font Awesome -->
             </div>
-            <div class="navbar-contet">
-              <a href="index.html">Home</a>
+            <div class="navbar-content"> <!-- Inicio de sección del Contenido del Navbar -->
+              <a href="index.html">Home</a> <!-- Link a la Home del sitio -->
             </div>
           </label>
         </nav>
-      </section>
-      <section class="banner-container" id="home">
-        <div class="background-image"></div>
-        <a class="banner-container__scroll" href="#skils">
-          <span>Scroll Down</span>
+      </section> <!-- Cierre de la sección del Navbar -->
+      <section class="banner-container" id="home"><!-- Sección definida como Home en la página. Se podrá usar un Anchor luego para dirigirse desde el navbar a esta sección. -->
+        <div class="background-image"></div><!-- Imagen de fondo para el sitio -->
+        <a class="banner-container__scroll" href="#skills"> <!-- Aquí se define la sección de habilidades  -->
+          <span>Scroll Down</span> <!-- Texto que avisa al usuario que se puede seguir navegando por la página hacia abajo -->
         </a>
       </section>
-      <section class="experience-container container" id="experience">
+      <section class="experience-container container" id="experience"> <!-- Aquí se define la sección de experiencia laboral -->
         <h3 class="title-content">Experiencia</h3>
         <div class="experience-container__topics">
           <div class="experience-container__topics__card">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </section>
-      <section class="works-container container" id="works">
+      <section class="works-container container" id="works"> <!-- Acá se define la sección de trabajos realizados -->
         <h3 class="title-content">Mis trabajos</h3>
         <div class="works-container__topics">
           <div class="works-container__topics__card">

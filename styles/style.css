@@ -35,6 +35,10 @@
   height: 100%;
 }
 
+::-webkit-scrollbar {
+  display: none;  /* Esta línea oculta las barras de desplazamiento, tanto horizontal como lateral, de manera de aprovechar la totalidad del ViewPort */
+}
+
 /* BANNER */
 .banner-container {
   height: 100%;
@@ -55,7 +59,7 @@
   bottom: 26px;
 }
 
-/* SKILS */
+/* SKILLS */
 
 /*SERVICES*/
 
@@ -115,11 +119,11 @@
     display: none;
   }
 
-  .navbar-contet {
+  .navbar-content {
     display: none;
   }
   
-  .navbar-input:checked ~ .navbar-contet {
+  .navbar-input:checked ~ .navbar-content {
     display: flex;
   }
 }
