@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icaro Zambonini</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link href="imagenes/triangular.svg" rel="Icon" type="image/svg">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <!-- Si hay que poner una canción multimedia, poner "a boy and his rose", de Sean Heathcliff o "Plage isolée" de Polo & Pan-->
 </head>
 <body>
   <div class="main-container"> <!-- Acá se define el contenedor principal, correspondiente al total de la página  -->
-    <section class="navbar-container__desktop"><!-- Este es el contenedor para el Navbar en la versión Desktop -->
+    <section class="navbar-container__desktop">
+      <div class="navbar-content"> <!-- Inicio de sección del Contenido del Navbar -->
+        <strong class="navbar-title">Ica Zambonini</strong>
+        <ul class="navbar-content-list">
+          <li class="list_items">
+            <a href="index.html"><i class="fas fa-home"></i><span class="navbar-links">Home</span></a>
+          </li> <!-- Link a la Home del sitio -->
+          <li class="list_items">
+            <a href="about_me.html"><i class="fas fa-user"></i><span class="navbar-links">Sobre mí<span></a>
+          </li> <!-- Link a "Sobre Mi" -->
+          <li class="list_items">
+            <a href="skills.html"><i class="fas fa-toolbox"></i><span class="navbar-links">Servicios</span></a>
+          </li> <!-- Link a "Servicios" -->
+          <li class="list_items">
+            <a href="experience.html"><i class="fas fa-scroll"></i><span class="navbar-links">Experiencia</span></a>
+          </li> <!-- Link a "Experiencia" -->
+          <li class="list_items">
+            <a href="works.html"><i class="fas fa-layer-group"></i><span class="navbar-links">Mis trabajos</span></a>
+          </li> <!-- Link a la "Mis trabajos" -->
+          <li class="list_items">
+            <a href="contact_me.html"><i class="far fa-comments"></i><span class="navbar-links">Contactame</span></a>
+          </li> <!-- Link a "Contactame" -->
+        </ul>
+      </div><!-- Este es el contenedor para el Navbar en la versión Desktop -->
     </section>
     <div class="full-container"><!--  Acá se define el contenedor con toda la sección navegable. Todo menos el navbar, por así decirlo-->
       <section class="navbar-container__mobile"><!-- Este es la sección para la definición del navbar para Mobile -->
@@ -21,14 +48,22 @@
               <i class="fas fa-times"></i> <!-- Declaración de Font Awesome -->
             </div>
             <div class="navbar-content"> <!-- Inicio de sección del Contenido del Navbar -->
-              <a href="index.html">Home</a> <!-- Link a la Home del sitio -->
+              <ul class="navbar-content-list">
+                <li class="list_items"><a  href="index.html">Home</a></li> <!-- Link a la Home del sitio -->
+                <li class="list_items"><a  href="about_me.html">Sobre mí</a></li> <!-- Link a "Sobre Mi" -->
+                <li class="list_items"><a  href="skills.html">Servicios</a></li> <!-- Link a "Servicios" -->
+                <li class="list_items"><a  href="experience.html">Experiencia</a></li> <!-- Link a "Experiencia" -->
+                <li class="list_items"><a  href="works.html">Mis trabajos</a></li> <!-- Link a la "Mis trabajos" -->
+                <li class="list_items"><a  href="contact_me.html">Contactame</a></li> <!-- Link a "Contactame" -->
+              </ul>
+              </ul>
             </div>
           </label>
         </nav>
       </section> <!-- Cierre de la sección del Navbar -->
       <section class="banner-container" id="home"><!-- Sección definida como Home en la página. Se podrá usar un Anchor luego para dirigirse desde el navbar a esta sección. -->
         <div class="background-image"></div><!-- Imagen de fondo para el sitio -->
-        <a class="banner-container__scroll" href="#skills"> <!-- Aquí se define la sección de habilidades  -->
+        <a class="banner-container__scroll" href="#skills"> <!-- Aquí se pone un link que va hacia la sección Skills  -->
           <span>Scroll Down</span> <!-- Texto que avisa al usuario que se puede seguir navegando por la página hacia abajo -->
         </a>
       </section>

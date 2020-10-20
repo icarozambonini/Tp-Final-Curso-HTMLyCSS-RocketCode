@@ -9,6 +9,25 @@
   box-sizing: border-box;
 }
 
+.fas, .far {
+  color: var(--color-terciary);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  margin: 0px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: var(--color-terciary);
+}
+
 .main-container {
   display: flex;
   height: 100vh;
@@ -19,6 +38,16 @@
 /* NAVBAR */
 .navbar-container__mobile {
   display: none;
+}
+
+.navbar-content {
+  position: relative;
+  top: 60px;
+  left: 50px;
+}
+
+.navbar-title {
+  font-size: 28px;
 }
 
 .navbar-container__desktop {
@@ -38,6 +67,27 @@
 ::-webkit-scrollbar {
   display: none;  /* Esta línea oculta las barras de desplazamiento, tanto horizontal como lateral, de manera de aprovechar la totalidad del ViewPort */
 }
+
+.navbar-content-list {
+  width: 289px;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  justify-content: flex-start;
+  padding: 103px 0px 0px 0px;
+  margin: 0px;
+}
+
+.navbar-links {
+  padding-left: 28px;
+  font-size:16px;
+}
+
+.list_items {
+  margin: 8px 0px;
+}
+
 
 /* BANNER */
 .banner-container {
