@@ -11,6 +11,7 @@
 
 .fas, .far {
   color: var(--color-terciary);
+  font-size: 16px;
 }
 
 body {
@@ -35,6 +36,10 @@ a:hover {
   overflow: hidden; /*Con esta propiedas ocultamos el contenido que se va fuera del viewport */
 }
 
+.title {
+  font-size: 28px;
+}
+
 /* NAVBAR */
 .navbar-container__mobile {
   display: none;
@@ -46,9 +51,6 @@ a:hover {
   left: 50px;
 }
 
-.navbar-title {
-  font-size: 28px;
-}
 
 .navbar-container__desktop {
   min-width: 290px;
@@ -95,6 +97,9 @@ a:hover {
   width: 100%;
   position: relative;
   background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background-image {
@@ -104,10 +109,58 @@ a:hover {
   position: absolute;
 }
 
+.banner-info-container {
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .banner-container__scroll {
   position: absolute;
   bottom: 26px;
 }
+
+.avatar {
+  width: 108px;
+  height: auto;
+}
+
+.banner-info-container__social-media {
+  width: 180px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+}
+
+.banner__sub-title {
+  font-size: 18px;
+  padding: 14px 0px;
+}
+
+.fab{
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.fab:hover {
+  color: var(--color-terciary);
+}
+
+.banner-info-container__button {
+  position: relative;
+  top: 24px;
+  background-color: var(--color-secondary);
+  height: 56px;
+  width: 140px;
+  border-radius: 28px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* SKILLS */
 
