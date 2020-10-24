@@ -64,8 +64,8 @@
       <section class="banner-container" id="home"><!-- Sección definida como Home en la página. Se podrá usar un Anchor luego para dirigirse desde el navbar a esta sección. -->
         <div class="background-image"></div><!-- Imagen de fondo para el sitio -->
         <div class="banner-info-container">
-            <img src="imagenes/man.svg" class="avatar" alt="Avatar con el que me siento representado">
-            <strong class=" title" style="padding-top: 60px;">Ica Zambonini</strong>
+            <img src="imagenes/avatar.svg" class="avatar" alt="Avatar con el que me siento representado">
+            <strong class=" title banner__title">Ica Zambonini</strong>
             <strong class="banner__sub-title">Frontend Developer</strong>
             <div class="banner-info-container__social-media">
               <a href="https://www.linkedin.com/in/icaro-zambonini-50a357161/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a>
@@ -73,13 +73,19 @@
               <a href="https://www.instagram.com/icarozambonini/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
               <a href="https://wa.link/n2xlys" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
             </div>
-            <div class="banner-info-container__button">
-              <a href="#contact_me"><span>Contactame</span></a>
-            </div>
+            <a href="#contact_me">
+              <div class="banner-info-container__button">
+                <span>Contactame</span>
+              </div>
+            </a>
         </div>
-        <a class="banner-container__scroll" href="#skills"> <!-- Aquí se pone un link que va hacia la sección Skills  -->
-          <span style="font-size: 16px;">Scroll Down</span> <!-- Texto que avisa al usuario que se puede seguir navegando por la página hacia abajo -->
-        </a>
+        <div class="banner-container__scroll" >
+          <a class="banner-container__scroll-link"href="#skills"> <!-- Aquí se pone un link que va hacia la sección Skills  -->
+            <span class=scroll>Scroll Down</span> <!-- Texto que avisa al usuario que se puede seguir navegando por la página hacia abajo -->
+            <img src="imagenes/mouse.svg" class="scroll-mouse" alt="computer-mouse">
+            <i class="fas fa-angle-down"></i>
+          </a>
+        </div>
       </section>
       <section class="experience-container container" id="experience"> <!-- Aquí se define la sección de experiencia laboral -->
         <h3 class="title-content">Experiencia</h3>
