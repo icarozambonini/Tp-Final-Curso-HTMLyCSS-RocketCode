@@ -1,8 +1,11 @@
 :root {
   --color-primary: #090D55;
-  --color-secondary: #ff4c60;
+  --color-secondary: #C02C47;
   --color-terciary: #ffd15c;
+  --color-background:  #26212c;
 }
+
+  /* --color-secondary: #ff4c60; */ 
 
 /* ESTILOS GENERALES */
 * {
@@ -11,7 +14,6 @@
 
 .fas, .far {
   color: var(--color-terciary);
-  font-size: 16px;
 }
 
 body {
@@ -29,6 +31,10 @@ a:hover {
   color: var(--color-terciary);
 }
 
+.button-link:hover {
+  color: #ffffff
+}
+
 .main-container {
   display: flex;
   height: 100vh;
@@ -38,6 +44,19 @@ a:hover {
 
 .title {
   font-size: 28px;
+}
+
+button {
+  background-color: var(--color-secondary);
+  border-style: none;
+}
+
+button:hover {
+  background-color: #ff4c60;
+}
+
+.button-link > span {
+  font-size: 16px;
 }
 
 /* NAVBAR */
@@ -56,7 +75,8 @@ a:hover {
   min-width: 290px;
   max-width: 290px;
   border-right: solid 1px rgba(255, 255, 255, 0.1);
-  background-color: var(--color-primary);
+  background-color: var(--color-background);
+  /* background-color: rgb(34, 28, 41); */
 }
 
 .full-container {
@@ -64,6 +84,7 @@ a:hover {
   scroll-behavior: smooth; /*Con esta propiedas logramos que las anclas de nuestra pagina se vean "suavizadas"*/
   width: 100%;
   height: 100%;
+  background-color: var(--color-background) ;
 }
 
 ::-webkit-scrollbar {
@@ -83,7 +104,6 @@ a:hover {
 
 .navbar-links {
   padding-left: 28px;
-  font-size:16px;
 }
 
 .list_items {
@@ -96,7 +116,6 @@ a:hover {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +182,6 @@ a:hover {
 .banner-info-container__button {
   position: relative;
   top: 24px;
-  background-color: var(--color-secondary);
   height: 42px;
   width: 140px;
   border-radius: 21px;
@@ -189,21 +207,76 @@ a:hover {
 
 .scroll {
   color: var(--color-terciary);
-  font-size: 16px;
   padding-bottom: 8px;
   color: #ffffff;
 }
 
 .scroll-mouse {
-height: 25px;
-width: auto;
+  height: 25px;
+  width: auto;
 }
 
 .fa-angle-down {
   color: #ffffff;
-  font-size: 16px;
 }
 
+.banner-container__scroll-link:hover > .fa-angle-down {
+  position: relative;
+  top: 3px;
+}
+
+/* ABOUT ME */
+.about_me-container {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin: 60px 55px;
+}
+
+.aboute_me-title {
+ padding: 38px 0px;
+}
+
+.about_me-avatar {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.about_me-info-container {
+  display:flex;
+}
+
+.about_me-info-container-box {
+  padding: 30px;
+  background-color:  #2e243b;
+  display: flex; 
+  flex-flow: column wrap;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 0px;
+  width: 680px;
+  height: 240px;
+}
+
+.about_me-description {
+  max-width: 280px;
+  margin: 0px;
+
+}
+
+.go-to-cv__button {
+  border-radius: 21px;
+  height: 42px;
+  width: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.go-to-cv {
+color: #ffffff;
+}
 
 /* SKILLS */
 
@@ -249,7 +322,7 @@ width: auto;
 
   .navbar-container__mobile {
     display: block;
-    background-color: var(--color-primary);
+    background-color: var(--color-background);
   }
 
   .navbar-input,
