@@ -3,6 +3,10 @@
   --color-secondary: #C02C47;
   --color-terciary: #ffd15c;
   --color-background:  #26212c;
+  --color-cardback:  #2e243b;
+  --color-buttonhover: #ff4c60;
+  --color-text: #ffffff;
+  --color-barguide: #3a3442;
 }
 
   /* --color-secondary: #ff4c60; */ 
@@ -18,13 +22,13 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  color: #ffffff;
+  color: var(--color-text);
   margin: 0px;
 }
 
 a:link, a:visited, a:active {
   text-decoration:none;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 a:hover {
@@ -32,7 +36,7 @@ a:hover {
 }
 
 .button-link:hover {
-  color: #ffffff
+  color: var(--color-text);
 }
 
 .main-container {
@@ -52,7 +56,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff4c60;
+  background-color: var(--color-buttonhover);
 }
 
 .button-link > span {
@@ -171,7 +175,7 @@ button:hover {
 
 .fab{
   font-size: 25px;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .fab:hover {
@@ -208,7 +212,7 @@ button:hover {
 .scroll {
   color: var(--color-terciary);
   padding-bottom: 8px;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .scroll-mouse {
@@ -217,7 +221,7 @@ button:hover {
 }
 
 .fa-angle-down {
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 .banner-container__scroll-link:hover > .fa-angle-down {
@@ -228,9 +232,8 @@ button:hover {
 /* ABOUT ME */
 .about_me-container {
   position: relative;
-  height: 250px;
   width: 100%;
-  margin: 60px 55px;
+  padding: 60px 55px;
 }
 
 .aboute_me-title {
@@ -249,19 +252,26 @@ button:hover {
 
 .about_me-info-container-box {
   padding: 30px;
-  background-color:  #2e243b;
-  display: flex; 
-  flex-flow: column wrap;
+  background-color: var(--color-cardback);
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
   border-radius: 5px;
   box-shadow: 0px 0px 1px 0px;
   width: 680px;
-  height: 240px;
+  max-height: 240px;
+
+}
+
+.about_me-info-container-box-description {
+  max-width: 45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about_me-description {
-  max-width: 280px;
   margin: 0px;
-
 }
 
 .go-to-cv__button {
@@ -275,7 +285,43 @@ button:hover {
 }
 
 .go-to-cv {
-color: #ffffff;
+  color: var(--color-text);
+}
+
+.about_me-info-container-box-cards {
+  width: 45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.guide-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--color-barguide);
+  margin-top: 15px;
+}
+
+.html-bar {
+  height: 100%;
+  width: 60%;
+  background-color: var(--color-terciary);
+  border-radius: 4px;
+}
+
+.css-bar{
+  height: 100%;
+  width: 65%;
+  background-color: var(--color-secondary);
+  border-radius: 4px;
+}
+
+.javascript-bar{
+  height: 100%;
+  width: 20%;
+  background-color: var(--color-primary);
+  border-radius: 4px;
 }
 
 /* SKILLS */
