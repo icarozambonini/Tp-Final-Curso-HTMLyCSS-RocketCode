@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #090D55;
+  --color-primary: #624892;
   --color-secondary: #C02C47;
   --color-terciary: #ffd15c;
   --color-background:  #26212c;
@@ -50,6 +50,10 @@ a:hover {
   font-size: 28px;
 }
 
+.section-title {
+  padding: 38px 0px;
+ }
+
 button {
   background-color: var(--color-secondary);
   border-style: none;
@@ -61,6 +65,12 @@ button:hover {
 
 .button-link > span {
   font-size: 16px;
+}
+
+.container {
+  /* position: relative; */
+  width: 100%;
+  padding: 60px 55px;
 }
 
 /* NAVBAR */
@@ -230,15 +240,6 @@ button:hover {
 }
 
 /* ABOUT ME */
-.about_me-container {
-  position: relative;
-  width: 100%;
-  padding: 60px 55px;
-}
-
-.aboute_me-title {
- padding: 38px 0px;
-}
 
 .about_me-avatar {
   width: 150px;
@@ -325,6 +326,54 @@ button:hover {
 }
 
 /* SKILLS */
+.skills-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  width: 290px;
+  height: 180px;
+  margin-left: 52px;
+  box-sizing: content-box;
+}
+
+.skills-card > p, .skills-card >span {
+  color: black;
+}
+
+.card-title {
+  padding: 22px;
+  font-size: 18px;
+}
+
+.card-description {
+  margin: 0px;
+}
+
+.card-img {
+  height: 65px;
+  width: auto;
+}
+
+.skills-card1 {
+  background-color: var(--color-terciary);
+  margin: 0px;
+}
+
+.skills-card2 {
+  background-color: var(--color-secondary);
+}
+
+.skills-card3 {
+  background-color: var(--color-primary);
+}
+
 
 /*SERVICES*/
 
