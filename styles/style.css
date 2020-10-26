@@ -1,12 +1,15 @@
 :root {
   --color-primary: #624892;
   --color-secondary: #C02C47;
-  --color-terciary: #ffd15c;
+  --color-terciary: #ffd15c;;
+  --color-extra: #ffa32a;
   --color-background:  #26212c;
   --color-cardback:  #2e243b;
   --color-buttonhover: #ff4c60;
   --color-text: #ffffff;
   --color-barguide: #3a3442;
+  --color-border: rgb(10, 10, 10);
+  --color-cardborder: #ccb6be;;
 }
 
   /* --color-secondary: #ff4c60; */ 
@@ -90,7 +93,6 @@ button:hover {
   max-width: 290px;
   border-right: solid 1px rgba(255, 255, 255, 0.1);
   background-color: var(--color-background);
-  /* background-color: rgb(34, 28, 41); */
 }
 
 .full-container {
@@ -142,7 +144,6 @@ button:hover {
   position: absolute;
   background-size: cover;
   z-index: 0;
-  position: absolute;
   top: -3px;
   left: -3px;
 }
@@ -340,11 +341,13 @@ button:hover {
   width: 290px;
   height: 180px;
   margin-left: 52px;
+  border: 1px solid var(--color-cardborder);
   box-sizing: content-box;
 }
 
 .skills-card > p, .skills-card >span {
   color: black;
+  text-align: center;
 }
 
 .card-title {
@@ -357,12 +360,15 @@ button:hover {
 }
 
 .card-img {
-  height: 65px;
+  height: 70px;
   width: auto;
+  border: 3px solid var(--color-border);
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .skills-card1 {
-  background-color: var(--color-terciary);
+  background-color: var(--color-extra);
   margin: 0px;
 }
 
