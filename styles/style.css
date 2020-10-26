@@ -344,7 +344,7 @@ button:hover {
 }
 
 .skills-card > p, .skills-card >span {
-  color: black;
+  color: var(--color-background);
 }
 
 .card-title {
