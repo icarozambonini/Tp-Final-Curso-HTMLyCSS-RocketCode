@@ -71,7 +71,7 @@ button:hover {
 }
 
 .container {
-  /* position: relative; */
+ /*  position: relative; */
   width: 100%;
   padding: 60px 55px;
 }
@@ -193,6 +193,10 @@ button:hover {
   color: var(--color-terciary);
 }
 
+.fa-spinner {
+  /* color: var(--color-text); */
+  font-weight: lighter;
+}
 
 .banner-info-container__button {
   position: relative;
@@ -381,20 +385,63 @@ button:hover {
 }
 
 
-/*SERVICES*/
-
 /*EXPERIENCE*/
+
+.experience-container__info {
+  display: flex;
+}
+
+.experience-container__topics {
+  padding: 30px;
+  background-color: var(--color-cardback);
+  border-radius: 20px;
+  box-shadow: 0 0 1px 0;;
+}
+
+.topics2 {
+  margin-left: 20px;
+}
+
+.experience-container__topics__card {
+
+}
+
 .experience-container__topics__card__data {
   padding: 0 0 50px 50px;
-  border-left: 1px solid var(--color-secondary);
+  border-left: 1px solid var(--color-terciary);
   position: relative;
 }
 
-.experience-container__topics__card__data > i {
+.experience-container__topics__card__data {
+  padding: 0 0 50px 50px;
+  border-left: 1px solid var(--color-terciary);
+  position: relative;
+}
+
+.experience-container__topics__card__data > .fa-graduation-cap {
+  position: absolute;
+  left: -10px;
+  top: -3px;
+  background-color: var(--color-cardback);
+  padding: 2px 0px;
+}
+
+.experience-container__topics__card__data > .fa-toolbox {
   position: absolute;
   left: -8px;
-  top: 0;
+  top: -4px;
+  background-color: var(--color-cardback);
+  padding: 2px 0px;
 }
+
+.experience-container__topics__card__data__date {
+  font-size: 14px;
+}
+
+.experience-container__topics__card__data__title {
+  font-size: 18px;
+}
+
 
 /* WORKS */
 .works-container__topics__card__mask {
