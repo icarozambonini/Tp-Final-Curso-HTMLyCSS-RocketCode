@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Icaro Zambonini</title>
+  <title>IcaZambonini</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link href="imagenes/triangular.svg" rel="Icon" type="image/svg">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
@@ -66,7 +66,7 @@
         <div class="banner-info-container">
             <img src="imagenes/avatar1.svg" class="avatar" alt="Avatar con el que me siento representado">
             <strong class=" title banner__title">Ica Zambonini</strong>
-            <strong class="banner__sub-title">Maquetador Web Jr.</strong>
+            <strong class="banner__sub-title">Frontend Dev Jr</strong>
             <div class="banner-info-container__social-media">
               <a href="https://www.linkedin.com/in/icaro-zambonini-50a357161/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a>
               <a href="https://github.com/icarozambonini/" target="_blank"><i class="fab fa-github fa-fw"></i></a>
@@ -74,14 +74,12 @@
               <a href="https://wa.link/n2xlys" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
             </div>
             <button class="banner-info-container__button">
-              <a href="#contact_me" class="button-link">
-                <span>Contactame</span>
-              </a>
+              <a href="#contact_me">Contactame</a>
             </button>
             
         </div>
         <div class="banner-container__scroll" >
-          <a class="banner-container__scroll-link" href="#skills"> <!-- Aquí se pone un link que va hacia la sección Skills  -->
+          <a class="banner-container__scroll-link" href="#about_me"> <!-- Aquí se pone un link que va hacia la sección Skills  -->
             <span class=scroll>Scroll Down</span> <!-- Texto que avisa al usuario que se puede seguir navegando por la página hacia abajo -->
             <img src="imagenes/mouse.svg" class="scroll-mouse" alt="computer-mouse">
             <i class="fas fa-angle-down"></i>
@@ -96,7 +94,7 @@
             <div class="about_me-info-container-box-description">
               <p class="about_me-description">Hola! Soy un desarrollador Frontend en formación. Comencé con HTML y CSS, y ahora estoy haciendo un curso de JavaScript.</p>
               <button class="go-to-cv__button">
-                <a href="/archivos/CV_icaro_zambonini.pdf" class="button-link"><span>Ver currículum</span></a>
+                <a href="/archivos/CV_icaro_zambonini.pdf">Ver currículum</a>
               </button> 
             </div>
             <div class="about_me-info-container-box-cards">
@@ -186,16 +184,72 @@
         </div>
       </section>
       <section class="works-container container" id="works"> <!-- Acá se define la sección de trabajos realizados -->
-        <h3 class="title-content">Mis trabajos</h3>
-        <div class="works-container__topics">
-          <div class="works-container__topics__card">
-            <div>Imagen de trabajo</div>
-            <div class="works-container__topics__card__mask">
-              <span>Photo magic</span>
+        <h3 class="title sub-title">Mis trabajos</h3>
+        <div class="works-container__info">
+          <div class="works-container__topics">
+            <div class="works-container__topics__card works-card1">
+              <img src="imagenes/trabajo-1.svg" type="image/svg" alt="imagen_del_trabajo_1">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card2">
+              <img src="imagenes/trabajo-2.svg" type="image/svg" alt="imagen_del_trabajo_2">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card3">
+              <img src="imagenes/trabajo-3.svg" type="image/svg" alt="imagen_del_trabajo_3">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card4">
+              <img src="imagenes/trabajo-4.svg" type="image/svg" alt="imagen_del_trabajo_4">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card5">
+              <img src="imagenes/trabajo-5.svg" type="image/svg" alt="imagen_del_trabajo_5">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card6">
+              <img src="imagenes/trabajo-6.svg" type="image/svg" alt="imagen_del_trabajo_6">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
             </div>
           </div>
         </div>
+        <div class="works__view-more-button-container">
+          <button class="works__view-more-button">
+            <a href="works.html">Ver todos</a>
+          </button> 
+        </div>
       </section>
+      <section class="contact_me-container container" id="contact_me">
+        <h3 class="section-title title">Contactame</h3>
+        <div class="contact_me-container__info">
+          <div class="contact_me-container__info__description">
+            <span>Enviame un mensaje</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quaerat dolorem reiciendis possimus ex vitae dicta deserunt, incidunt delectus vero quisquam sint illum praesentium voluptas suscipit velit, laboriosam beatae ut!</p> 
+          </div>
+          <form class="contact_me-container__info__form">
+              <label for="name"></label>
+              <input id="name" name="fullName" placeholder="Nombre">
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="Email">
+              <textarea name="leaveYourMessage" placeholder="Tu mensaje"></textarea>
+          </form>
+        </div>
+      </section>
+      <footer>
+          
+      </footer>
     </div>
   </div>
   <script src="https://kit.fontawesome.com/7aa36192fa.js" crossorigin="anonymous"></script>

@@ -9,10 +9,8 @@
   --color-text: #ffffff;
   --color-barguide: #3a3442;
   --color-border: rgb(10, 10, 10);
-  --color-cardborder: #ccb6be;;
+  --color-cardborder: #ccb6be;
 }
-
-  /* --color-secondary: #ff4c60; */ 
 
 /* ESTILOS GENERALES */
 * {
@@ -38,10 +36,6 @@ a:hover {
   color: var(--color-terciary);
 }
 
-.button-link:hover {
-  color: var(--color-text);
-}
-
 .main-container {
   display: flex;
   height: 100vh;
@@ -60,14 +54,21 @@ a:hover {
 button {
   background-color: var(--color-secondary);
   border-style: none;
+  height: 42px;
+  border-radius: 21px;
+  text-align: center;
+  color: var(--color-text);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: lighter;
 }
 
 button:hover {
   background-color: var(--color-buttonhover);
 }
 
-.button-link > span {
-  font-size: 16px;
+button:hover > a {
+  color: var(--color-text);
 }
 
 .container {
@@ -75,6 +76,7 @@ button:hover {
   width: 100%;
   padding: 60px 55px;
 }
+
 
 /* NAVBAR */
 .navbar-container__mobile {
@@ -193,20 +195,9 @@ button:hover {
   color: var(--color-terciary);
 }
 
-.fa-spinner {
-  /* color: var(--color-text); */
-  font-weight: lighter;
-}
-
 .banner-info-container__button {
-  position: relative;
-  top: 24px;
-  height: 42px;
+  margin-top: 24px;
   width: 140px;
-  border-radius: 21px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .banner-container__scroll {
@@ -281,17 +272,8 @@ button:hover {
 }
 
 .go-to-cv__button {
-  border-radius: 21px;
-  height: 42px;
   width: 162px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
-}
-
-.go-to-cv {
-  color: var(--color-text);
 }
 
 .about_me-info-container-box-cards {
@@ -333,7 +315,7 @@ button:hover {
 /* SKILLS */
 .skills-card-container {
   display: flex;
-  justify-content: space-between;
+  column-gap: 52px;
 }
 
 .skills-card {
@@ -342,11 +324,8 @@ button:hover {
   align-items: center;
   padding: 30px;
   border-radius: 15px;
-  width: 290px;
-  height: 180px;
-  margin-left: 52px;
+  width: 30%;
   border: 1px solid var(--color-cardborder);
-  box-sizing: content-box;
 }
 
 .skills-card > p, .skills-card >span {
@@ -373,7 +352,6 @@ button:hover {
 
 .skills-card1 {
   background-color: var(--color-extra);
-  margin: 0px;
 }
 
 .skills-card2 {
@@ -389,22 +367,17 @@ button:hover {
 
 .experience-container__info {
   display: flex;
+  column-gap: 20px;
 }
 
 .experience-container__topics {
   padding: 30px;
   background-color: var(--color-cardback);
   border-radius: 20px;
-  box-shadow: 0 0 1px 0;;
+  box-shadow: 0 0 1px 0;
+  width: 49%;
 }
 
-.topics2 {
-  margin-left: 20px;
-}
-
-.experience-container__topics__card {
-
-}
 
 .experience-container__topics__card__data {
   padding: 0 0 50px 50px;
@@ -444,16 +417,111 @@ button:hover {
 
 
 /* WORKS */
+.works-container__topics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.works-container__topics__card {
+  padding: 30px;
+  width: 29%;
+  background-color: var(--color-text);
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0;
+  position: relative;
+}
+
+.works-container__topics__card > img {
+  height: 160px;
+  width: 100%;
+}
+
 .works-container__topics__card__mask {
   background: #6c6ce5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
   opacity: 0; /*Con esta propiedad le cambiamos la transparencia a nuestas cajas*/
+  box-sizing: content-box;
+}
+
+.works-container__topics__card__mask > span {
+  font-size: 28px;
+  position: relative;
+  top: 20px;
+  left: 20px;
 }
 
 .works-container__topics__card:hover > .works-container__topics__card__mask {
   opacity: 0.9;
 }
 
+.works__view-more-button {
+  width: 120px;
+  margin-top: 20px;
+}
+
+.works__view-more-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} 
+
 /* CONTACTME */
+.contact_me-container__info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--color-cardback);
+  border-radius: 15px;
+  box-shadow: 0px 0px 1px 0px;
+  padding: 15px;
+}
+
+.contact_me-container__info__description {
+  width: 30%;
+  height: 100%;
+}
+
+.contact_me-container__info__description >span {
+font-size: 18px;
+}
+
+.contact_me-container__info__form {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+input {
+  height: 30px;
+  width: 48%;
+}
+
+label {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  height: 240px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  border-radius: 15px;
+  font-family: inherit;
+  padding: 15px;
+  border-style: none;;
+}
 
 /* FOOTER */
 
