@@ -94,7 +94,7 @@
             <div class="about_me-info-container-box-description">
               <p class="about_me-description">Hola! Soy un desarrollador Frontend en formación. Comencé con HTML y CSS, y ahora estoy haciendo un curso de JavaScript.</p>
               <button class="go-to-cv__button">
-                <a href="/archivos/CV_icaro_zambonini.pdf">Ver currículum</a>
+                <a href="archivos/CVIcaroZambonini.pdf" target="_blank">Ver currículum</a>
               </button> 
             </div>
             <div class="about_me-info-container-box-cards">
@@ -196,31 +196,31 @@
             <div class="works-container__topics__card works-card2">
               <img src="imagenes/trabajo-2.svg" type="image/svg" alt="imagen_del_trabajo_2">
               <div class="works-container__topics__card__mask">
-                <span>Photo magic</span>
+                <span>Giftbox</span>
               </div>
             </div>
             <div class="works-container__topics__card works-card3">
               <img src="imagenes/trabajo-3.svg" type="image/svg" alt="imagen_del_trabajo_3">
               <div class="works-container__topics__card__mask">
-                <span>Photo magic</span>
+                <span>Hierarchy</span>
               </div>
             </div>
             <div class="works-container__topics__card works-card4">
               <img src="imagenes/trabajo-4.svg" type="image/svg" alt="imagen_del_trabajo_4">
               <div class="works-container__topics__card__mask">
-                <span>Photo magic</span>
+                <span>Galpón de ropa</span>
               </div>
             </div>
             <div class="works-container__topics__card works-card5">
               <img src="imagenes/trabajo-5.svg" type="image/svg" alt="imagen_del_trabajo_5">
               <div class="works-container__topics__card__mask">
-                <span>Photo magic</span>
+                <span>Youtube</span>
               </div>
             </div>
             <div class="works-container__topics__card works-card6">
               <img src="imagenes/trabajo-6.svg" type="image/svg" alt="imagen_del_trabajo_6">
               <div class="works-container__topics__card__mask">
-                <span>Photo magic</span>
+                <span>Mobile first</span>
               </div>
             </div>
           </div>
@@ -236,19 +236,28 @@
         <div class="contact_me-container__info">
           <div class="contact_me-container__info__description">
             <span>Enviame un mensaje</span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quaerat dolorem reiciendis possimus ex vitae dicta deserunt, incidunt delectus vero quisquam sint illum praesentium voluptas suscipit velit, laboriosam beatae ut!</p> 
+            <p>Para contactarte conmigo, dejá un mensaje en esta sección contándome un poco más sobre lo que te interesó de mi perfil, y qué crees que le puedo aportar a tu proyecto. No te olvides de completar los campos con tus datos personales!</p> 
+            <i>Los campos indicados con * son obligatorios</i>
           </div>
-          <form class="contact_me-container__info__form">
+          <form class="contact_me-container__info__form" id="message" method="GET">
               <label for="name"></label>
-              <input id="name" name="fullName" placeholder="Nombre">
+              <input id="name" name="fullName" placeholder="*Nombre" requierd>
               <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Email">
-              <textarea name="leaveYourMessage" placeholder="Tu mensaje"></textarea>
+              <input type="email" id="email" name="email" placeholder="*Email" requierd>
+              <label name="leaveYourMessage"></label>
+              <textarea name="leaveYourMessage" placeholder="*Tu mensaje" requierd></textarea>
+              <button type="submit" class="formSubmitButton">Enviar</button>
           </form>
         </div>
       </section>
-      <footer>
-          
+      <footer class="page-footer">
+        <strong>Icaro Zambonini - Oct 2020</strong>
+        <div class="banner-info-container__social-media">
+          <a href="https://www.linkedin.com/in/icaro-zambonini-50a357161/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a>
+          <a href="https://github.com/icarozambonini/" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+          <a href="https://www.instagram.com/icarozambonini/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+          <a href="https://wa.link/n2xlys" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
+        </div>
       </footer>
     </div>
   </div>
