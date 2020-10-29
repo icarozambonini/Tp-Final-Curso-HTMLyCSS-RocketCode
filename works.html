@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IcaZambonini</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="imagenes/triangular.svg" rel="Icon" type="image/svg">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <!-- Si hay que poner una canción multimedia, poner "a boy and his rose", de Sean Heathcliff o "Plage isolée" de Polo & Pan-->
+</head>
+<body>
+  <div class="main-container"> <!-- Acá se define el contenedor principal, correspondiente al total de la página  -->
+    <section class="navbar-container__desktop">
+      <div class="navbar-content"> <!-- Inicio de sección del Contenido del Navbar -->
+        <strong class="title">Ica Zambonini</strong>
+        <ul class="navbar-content-list">
+          <li class="list_items">
+            <a href="index.html"><i class="fas fa-home fa-fw"></i><span class="navbar-links">Home</span></a>
+          </li> <!-- Link a la Home del sitio -->
+          <li class="list_items">
+            <a href="index.html#about_me"><i class="fas fa-user fa-fw"></i><span class="navbar-links">Sobre mí<span></a>
+          </li> <!-- Link a "Sobre Mi" -->
+          <li class="list_items">
+            <a href="index.html#skills"><i class="fas fa-toolbox fa-fw"></i><span class="navbar-links">Servicios</span></a>
+          </li> <!-- Link a "Servicios" -->
+          <li class="list_items">
+            <a href="index.html#experience"><i class="fas fa-scroll fa-fw"></i><span class="navbar-links">Experiencia</span></a>
+          </li> <!-- Link a "Experiencia" -->
+          <li class="list_items">
+            <a href="index.html#works"><i class="fas fa-layer-group fa-fw"></i><span class="navbar-links">Mis trabajos</span></a>
+          </li> <!-- Link a la "Mis trabajos" -->
+          <li class="list_items">
+            <a href="index.html#contact_me"><i class="far fa-comments fa-fw"></i><span class="navbar-links">Contactame</span></a>
+          </li> <!-- Link a "Contactame" -->
+        </ul>
+      </div><!-- Este es el contenedor para el Navbar en la versión Desktop -->
+    </section>
+    <div class="full-container"><!--  Acá se define el contenedor con toda la sección navegable. Todo menos el navbar, por así decirlo-->
+      <section class="navbar-container__mobile"><!-- Este es la sección para la definición del navbar para Mobile -->
+        <nav class="navbar-container__mobile__list"><!-- Esta es la etiqueta semántica que define la sección navegable en sí -->
+          <label for="navbar" class="navbar-container__mobile__list__label"> <!-- Esta es la etiqueta con el checkbox para hacer andar el menú desplegable -->
+            <input type="checkbox" id="navbar" class="navbar-input" /><!-- Este es el input checkbox en sí, al que hay que asociar el menú desplegable -->
+            <div class="navbar-open"> <!-- Este es el div del navbar abierto -->
+              <i class="fas fa-bars"></i> <!-- Declaración de Font Awesome -->
+            </div>
+            <div class="navbar-close"> <!-- Este es el div del navbar cerrado -->
+              <i class="fas fa-times"></i> <!-- Declaración de Font Awesome -->
+            </div>
+            <div class="navbar-content"> <!-- Inicio de sección del Contenido del Navbar -->
+              <ul class="navbar-content-list">
+                <li class="list_items"><a  href="index.html">Home</a></li> <!-- Link a la Home del sitio -->
+                <li class="list_items"><a  href="index.html#about_me">Sobre mí</a></li> <!-- Link a "Sobre Mi" -->
+                <li class="list_items"><a  href="index.html#skills">Servicios</a></li> <!-- Link a "Servicios" -->
+                <li class="list_items"><a  href="index.html#experience">Experiencia</a></li> <!-- Link a "Experiencia" -->
+                <li class="list_items"><a  href="index.html#works">Mis trabajos</a></li> <!-- Link a la "Mis trabajos" -->
+                <li class="list_items"><a  href="index.html#contact_me">Contactame</a></li> <!-- Link a "Contactame" -->
+              </ul>
+              </ul>
+            </div>
+          </label>
+        </nav>
+      </section>
+       <!-- Cierre de la sección del Navbar -->
+      <section class="works-container container" id="works"> <!-- Acá se define la sección de trabajos realizados -->
+        <button class="back-to-index">
+            <a href="index.html#works"> << volver </a>
+        </button> 
+        <h3 class="title sub-title">Mis trabajos</h3>
+        <div class="works-container__info">
+          <div class="works-container__topics">
+            <div class="works-container__topics__card works-card1">
+              <img src="imagenes/trabajo-1.svg" type="image/svg" alt="imagen_del_trabajo_1">
+              <div class="works-container__topics__card__mask">
+                <span>Photo magic</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card2">
+              <img src="imagenes/trabajo-2.svg" type="image/svg" alt="imagen_del_trabajo_2">
+              <div class="works-container__topics__card__mask">
+                <span>Giftbox</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card3">
+              <img src="imagenes/trabajo-3.svg" type="image/svg" alt="imagen_del_trabajo_3">
+              <div class="works-container__topics__card__mask">
+                <span>Hierarchy</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card4">
+              <img src="imagenes/trabajo-4.svg" type="image/svg" alt="imagen_del_trabajo_4">
+              <div class="works-container__topics__card__mask">
+                <span>Galpón de ropa</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card5">
+              <img src="imagenes/trabajo-5.svg" type="image/svg" alt="imagen_del_trabajo_5">
+              <div class="works-container__topics__card__mask">
+                <span>Youtube</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card6">
+              <img src="imagenes/trabajo-6.svg" type="image/svg" alt="imagen_del_trabajo_6">
+              <div class="works-container__topics__card__mask">
+                <span>Mobile first</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card7">
+              <img src="imagenes/trabajo-7.svg" type="image/svg" alt="imagen_del_trabajo_7">
+              <div class="works-container__topics__card__mask">
+                <span>Telech@t</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card8">
+              <img src="imagenes/trabajo-8.svg" type="image/svg" alt="imagen_del_trabajo_8">
+              <div class="works-container__topics__card__mask">
+                <span>Fleximarket</span>
+              </div>
+            </div>
+            <div class="works-container__topics__card works-card9">
+              <img src="imagenes/trabajo-9.svg" type="image/svg" alt="imagen_del_trabajo_9">
+              <div class="works-container__topics__card__mask">
+                <span>Schedulize</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <strong>Icaro Zambonini - Oct 2020</strong>
+        <div class="banner-info-container__social-media">
+          <a href="https://www.linkedin.com/in/icaro-zambonini-50a357161/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a>
+          <a href="https://github.com/icarozambonini/" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+          <a href="https://www.instagram.com/icarozambonini/" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+          <a href="https://wa.link/n2xlys" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/7aa36192fa.js" crossorigin="anonymous"></script>
+</body>
+</html>

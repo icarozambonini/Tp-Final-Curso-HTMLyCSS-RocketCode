@@ -467,6 +467,14 @@ button:hover > a {
   margin-top: 20px;
 }
 
+.back-to-index {
+  background-color: var(--color-background);
+}
+
+.back-to-index:hover {
+  background-color: var(--color-background);
+}
+
 .works__view-more-button-container {
   width: 100%;
   display: flex;
