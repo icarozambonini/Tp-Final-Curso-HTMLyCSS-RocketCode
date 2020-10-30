@@ -114,15 +114,15 @@ button:hover > a {
   width: 289px;
   list-style: none;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: space-around;
   justify-content: flex-start;
   padding: 103px 0px 0px 0px;
   margin: 0px;
 }
 
-.navbar-links {
-  padding-left: 28px;
+.list_items i {
+  margin-right: 18px;
 }
 
 .list_items {
@@ -142,8 +142,8 @@ button:hover > a {
 
 .background-image {
   height: 100%;
-  width: 101%;
-  background-image: url("../imagenes/fondo.svg");
+  width: 100%;
+  background-image: url("../imagenes/fondo.png");
   position: absolute;
   background-size: cover;
   z-index: 0;
@@ -256,12 +256,11 @@ button:hover > a {
   border-radius: 5px;
   box-shadow: 0px 0px 1px 0px;
   width: 680px;
-  max-height: 240px;
-
+  height: 240px;
 }
 
 .about_me-info-container-box-description {
-  max-width: 45%;
+  width: 45%;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -315,7 +314,7 @@ button:hover > a {
 /* SKILLS */
 .skills-card-container {
   display: flex;
-  column-gap: 52px;
+  justify-content: space-between;
 }
 
 .skills-card {
@@ -367,7 +366,7 @@ button:hover > a {
 
 .experience-container__info {
   display: flex;
-  column-gap: 20px;
+  justify-content: space-between;
 }
 
 .experience-container__topics {
@@ -378,12 +377,6 @@ button:hover > a {
   width: 49%;
 }
 
-
-.experience-container__topics__card__data {
-  padding: 0 0 50px 50px;
-  border-left: 1px solid var(--color-terciary);
-  position: relative;
-}
 
 .experience-container__topics__card__data {
   padding: 0 0 50px 50px;
@@ -420,9 +413,7 @@ button:hover > a {
 .works-container__topics {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  column-gap: 50px;
-  row-gap: 20px;
+  justify-content: space-between;
 }
 
 .works-container__topics__card {
@@ -432,6 +423,7 @@ button:hover > a {
   border-radius: 15px;
   box-shadow: 0 0 5px 0;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .works-container__topics__card > img {
@@ -464,7 +456,6 @@ button:hover > a {
 
 .works__view-more-button {
   width: 120px;
-  margin-top: 20px;
 }
 
 .back-to-index {
@@ -521,7 +512,7 @@ input {
   width: 48%;
 }
 
-label {
+.contact_me-container__info__form label {
   display: none;
 }
 
@@ -545,6 +536,14 @@ input, textarea {
 
 /* FOOTER */
 
+}.footer-text-mobile {
+  display: none;
+}
+
+.footer-text-desktop {
+  display: flex;
+}
+
 .page-footer {
   width: 100%;
   height: 50px;
@@ -564,15 +563,49 @@ footer .fab {
   .container {
     max-width: initial;
     width: 100%;
+    padding: 30px;
+  }
+
+  .section-title {
+    padding-bottom: 20px;
+   }
+
+  .navbar-content-list {
+    padding: 0px;
+    margin: 0px;
   }
 
   .navbar-container__desktop {
     display: none;
   }
 
+  .navbar-input:checked ~ .navbar-container__mobile {
+    position: absolute;
+  }
+
   .navbar-container__mobile {
-    display: block;
+    display: flex;
     background-color: var(--color-background);
+    top:0;
+    left:-10;
+    z-index: 2;
+    padding: 18px;
+    border-radius: 5px;
+    border: 2px solid var(--color-barguide);
+    position: fixed;
+    width: 100%
+  }
+
+  .navbar-content {
+    display: none;
+    flex-direction: column;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: content-box;
+    position: relative;
+    top: 10px;
+    left: 10px;
   }
 
   .navbar-input,
@@ -580,6 +613,14 @@ footer .fab {
     display: none;
   }
   
+  .navbar-container__mobile__list {
+    width: 100%;
+  }
+
+  .navbar-container__mobile .fas {
+    font-size: 18px;
+  }
+
   .navbar-input:checked ~ .navbar-close {
     display: block;
   }
@@ -588,11 +629,153 @@ footer .fab {
     display: none;
   }
 
-  .navbar-content {
-    display: none;
-  }
-  
+
   .navbar-input:checked ~ .navbar-content {
     display: flex;
   }
+
+ 
+ /* BANNER */
+
+.banner-info-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  position: relative;
+}
+
+.banner-container__scroll {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* ABOUT ME */
+
+.about_me-info-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_me-info-container-box {
+  padding: 30px;
+  background-color: var(--color-cardback);
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 0px;
+  width: 100%;
+  height: auto;
+}
+
+.about_me-info-container-box > div {
+  width: 100%;
+
+}
+
+.about_me-info-container-box-description {
+  margin-bottom: 20px;
+}
+
+.about_me-avatar {
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+
+.skills-card-container {
+  flex-direction: column;
+}
+
+.skills-card {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 
+}
+
+/* EXPERIENCE */
+
+.experience-container__info {
+  flex-direction: column;
+}
+
+.experience-container__topics {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+}
+
+.experience-container__topics__card__data {
+  padding: 0 0 10px 30px;
+}
+
+.experience-container__topics__card__data__date {
+  margin: 5px 0;
+}
+
+.experience-container__topics__card__data__title {
+  margin: 5px 0;
+}
+
+/* WORKS*/
+
+.works-container__topics {
+  flex-direction: column;
+}
+
+.works-container__topics__card {
+  width: 100%;
+}
+
+/* CONTACT ME */
+
+.contact_me-container__info{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-cardback);
+  border-radius: 15px;
+  box-shadow: 0px 0px 1px 0px;
+  padding: 15px;
+}
+
+.contact_me-container__info__description {
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.contact_me-container__info__description >i {
+  font-size: 14px;
+  padding-top: 80px;
+  color: var(--color-cardborder)
+}
+  
+.contact_me-container__info__form {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+
+.footer-text-mobile {
+  display: flex;
+}
+
+.footer-text-desktop {
+  display: none;
+}
+
+.page-footer {
+  padding: 20px
+}
+
+footer > .banner-info-container__social-media {
+  width: 120px;
 }
